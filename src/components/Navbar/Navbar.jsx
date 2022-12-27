@@ -21,9 +21,11 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav>
+      <nav className="navbar">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
         <ul className={renderClass()}>
           <li className="link">
@@ -33,10 +35,12 @@ const Navbar = () => {
             <a href="#">Accounts</a>
           </li>
           <li className="link login-btn">
-            <a href="#">Login</a>
+            <a href="/welcome" Login>
+              Login
+            </a>
           </li>
           <li className="link register-btn">
-            <a href="#">Register</a>
+            <a href="/welcome">Register</a>
           </li>
         </ul>
         <div onClick={handleToggle} className="hamburger-toggle">

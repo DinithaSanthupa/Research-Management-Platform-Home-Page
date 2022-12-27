@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Researcher/Researcher.css';
 
 import researcher from '../Researcher/research.jpg';
@@ -16,7 +17,9 @@ const Resercheer = () => {
           gross domestic product (GDP) in 2019 and $296.959 billion by
           purchasing power parity (PPP).
         </h4>
-        <div className="cta">Join now</div>
+        <div className="cta">
+          <Link to="/welcome">Join now</Link>
+        </div>
       </div>
     </div>
   );

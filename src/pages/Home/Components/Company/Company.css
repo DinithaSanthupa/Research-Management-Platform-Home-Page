@@ -4,6 +4,11 @@ body {
 }
 
 .company {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(0 0 0 / 0.87);
+
   height: 100vh;
   margin-top: 40px;
   display: flex;

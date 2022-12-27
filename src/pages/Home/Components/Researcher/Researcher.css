@@ -1,4 +1,9 @@
 .researcher {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(0 0 0 / 0.87);
+
   margin-top: 40px;
   display: flex;
   height: 100vh;
