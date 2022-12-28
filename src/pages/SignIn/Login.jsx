@@ -1,38 +1,42 @@
 import { useState } from 'react';
-//import { useLogin } from "../hooks/useLogin"
 
 import './Login.css';
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  //const {login, error, isLoading} = useLogin()
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    //await login(email, password)
-  };
+  const [email, setEmail] = useState(' ');
+  const [password, setPassword] = useState(' ');
 
   return (
-    <form className="login" onSubmit={handleSubmit}>
-      <h3>Log In</h3>
-
-      <label>Email address:</label>
-      <input
-        type="email"
-        onChange={(e) => setEmail(e.target.value)}
-        value={email}
-      />
-      <label>Password:</label>
-      <input
-        type="password"
-        onChange={(e) => setPassword(e.target.value)}
-        value={password}
-      />
-
-      <button>Log in</button>
-    </form>
+    <div className="login">
+      <div className="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div className="txt_field">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div className="pass">Forgot Password?</div>
+          <input type="submit" value="Login" />
+          <div className="signup_link">
+            Not a member? <a href="#">Signup</a>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 };
 

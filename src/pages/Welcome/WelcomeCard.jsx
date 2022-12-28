@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Welcome.css';
 
@@ -13,7 +14,9 @@ const WelcomeCard = (props) => {
         <p>{props.description}</p>
       </div>
       <div className="card-footer">
-        <div className="welcome-login-button">Login</div>
+        <div className="welcome-login-button">
+          <Link to="/login">Login</Link>
+        </div>
         <div className="welcome-register-button">Signup</div>
       </div>
     </div>
